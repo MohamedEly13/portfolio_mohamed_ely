@@ -1,4 +1,3 @@
-/* 1. PALETTE : change ces variables pour personnaliser toutes les couleurs. */
 :root {
   --bg: #09141c;
   --surface: #0e1c26;
@@ -1112,4 +1111,9 @@ dialog > p:not(.eyebrow) {
   color: #9ef0e3;
   text-decoration: underline;
   font-size: 12px;
+}
+@media (max-width: 768px) {
+  .code-stamp {
+    top: 330px;
+  }
 }

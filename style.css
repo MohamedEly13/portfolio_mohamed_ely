@@ -1112,8 +1112,17 @@ dialog > p:not(.eyebrow) {
   text-decoration: underline;
   font-size: 12px;
 }
+
 @media (max-width: 768px) {
   .code-stamp {
-    top: 330px;
+    bottom: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .section-heading {
+    display: block;
+  }
+  .section-heading p {
+    margin-top: 15px;
   }
 }

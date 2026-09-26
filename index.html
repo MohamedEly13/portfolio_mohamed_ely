@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio personnel : projets, compétences et parcours en développement web"
+    />
+    <meta name="theme-color" content="#09141c" />
+    <meta name="robots" content="noindex, follow">
+    <title>Portfolio Mohamed | Développement web</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicon.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="profil.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#accueil" aria-label="Revenir à l'accueil">
+          <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+          <span data-name>Votre prénom</span><span class="brand-dot"></span>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="navigation"
+          aria-expanded="false"
+          hidden
+        >
+          <span>Menu</span><span class="menu-lines" aria-hidden="true"></span>
+        </button>
+        <nav id="navigation" aria-label="Navigation principale">
+          <a href="#projets">Projets</a><a href="#apropos">À propos</a>
+          <a href="#competences">Compétences</a
+          ><a class="nav-contact" href="#contact"
+            >On échange ? <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main id="contenu">
+      <section class="hero container" id="accueil" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="short-line"></span> PORTFOLIO PERSONNEL
+          </p>
+          <p class="hello">
+            Bonjour, moi c'est <span data-name>Votre prénom</span>
+          </p>
+          <h1 id="hero-title">
+            J'apprends<br />Je construis<br /><span>Je progresse</span>
+          </h1>
+          <p class="hero-role" id="profile-title">
+            Étudiant en informatique à Epitech
+          </p>
+          <p class="hero-description" id="profile-hook">
+            Un espace pour partager mon parcours, mes idées et les projets qui
+            me font avancer
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projets"
+              >Explorer mes projets <span aria-hidden="true">↗</span></a
+            ><a class="text-link" href="#contact"
+              >Me contacter <span aria-hidden="true">→</span></a
+            >
+          </div>
+        </div>
+        <div class="hero-visual" role="group" aria-label="Carte de profil">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="profile-card">
+            <div class="card-topline">
+              <span>LE PROFIL</span><span aria-hidden="true">↗</span>
+            </div>
+            <div class="portrait-frame">
+              <span id="initials" aria-hidden="true">VP<span>.</span></span>
+            </div>
+            <div class="card-caption">
+              <span id="card-name">Votre prénom Nom</span
+              ><span id="card-city">Votre ville</span>
+            </div>
+          </div>
+          <div class="code-stamp" aria-hidden="true">
+            <span class="code-symbol">&lt;/&gt;</span
+            ><span>Une idée<br />Du code<br />Un projet</span>
+          </div>
+          <p class="visual-note">CURIEUX PAR NATURE<br />CRÉATIF PAR ENVIE</p>
+        </div>
+        <div class="hero-bottom">
+          <span id="availability">Mon parcours, en construction</span
+          ><a href="#projets"
+            >La suite juste ici <span aria-hidden="true">↓</span></a
+          >
+        </div>
+      </section>
+      <section
+        class="projects section"
+        id="projets"
+        aria-labelledby="projects-title"
+      >
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">01 / EXPLORER</p>
+              <h2 id="projects-title">Les idées prennent <em>forme</em></h2>
+            </div>
+            <p>
+              Des expériences, des apprentissages<br />et l'envie d'aller plus loin
+            </p>
+          </div>
+          <div
+            class="filters"
+            role="group"
+            aria-label="Filtrer les projets"
+            id="filters"
+          ></div>
+          <div class="project-grid" id="project-grid"></div>
+          <p class="sr-only" id="filter-status" role="status"></p>
+          <noscript
+            ><p>
+              Active JavaScript pour afficher les projets et les informations
+              personnalisées
+            </p></noscript
+          >
+        </div>
+      </section>
+      <section
+        class="about section container"
+        id="apropos"
+        aria-labelledby="about-title"
+      >
+        <div class="about-copy reveal">
+          <p class="eyebrow">02 / RENCONTRER</p>
+          <h2 id="about-title">Derrière le code,<br /><em>une personne</em></h2>
+          <p id="profile-description">
+          </p>
+          <a class="text-link" id="cv-link" hidden
+            >Télécharger mon CV <span aria-hidden="true">↓</span></a
+          >
+        </div>
+        <div class="journey reveal">
+          <h3>Formations</h3>
+          <ol id="formations-list"></ol>
+          <h3>Expériences professionnelles</h3>
+          <ol id="experiences-list"></ol>
+        </div>
+      </section>
+      <section
+        class="skills section"
+        id="competences"
+        aria-labelledby="skills-title"
+      >
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">03 / CONSTRUIRE</p>
+              <h2 id="skills-title">Ma boîte <em>à outils</em></h2>
+            </div>
+            <p>Ce que j'utilise<br />Ce que je continue d'apprendre</p>
+          </div>
+          <div class="skills-grid" id="skills-grid"></div>
+          <div class="human-skills">
+            <h3>Ma façon de travailler</h3>
+            <div class="soft-grid" id="soft-grid"></div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="extras section container"
+        id="personnalite"
+        aria-labelledby="extras-title"
+      >
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">04 / PARTAGER</p>
+            <h2 id="extras-title">Au-delà <em>du code</em></h2>
+          </div>
+        </div>
+        <div class="extras-grid">
+          <article id="languages-section">
+            <h3>Langues</h3>
+            <ul id="languages-list" class="detail-list"></ul>
+          </article>
+          <article id="interests-section">
+            <h3>Centres d'intérêt</h3>
+            <ul id="interests-list" class="detail-list"></ul>
+          </article>
+          <article id="certifications-section" hidden>
+            <h3>Certifications et badges</h3>
+            <ul id="certifications-list" class="detail-list"></ul>
+          </article>
+          <article id="engagements-section" hidden>
+            <h3>Engagement associatif</h3>
+            <ul id="engagements-list" class="detail-list"></ul>
+          </article>
+        </div>
+      </section>
+      <section
+        class="contact section container"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-copy reveal">
+          <p class="eyebrow">05 / ÉCHANGER</p>
+          <h2 id="contact-title">Et si on créait<br /><em>la suite ?</em></h2>
+          <p>
+            Un projet, une opportunité ou simplement une question ? Parlons-en
+          </p>
+          <a class="contact-email" id="email-link" hidden></a
+          ><button
+            class="text-link copy-email"
+            id="copy-email"
+            type="button"
+            hidden
+          >
+            Copier l'adresse <span aria-hidden="true">↗</span>
+          </button>
+          <p class="small-note" id="copy-status" role="status"></p>
+          <div class="social-links" id="social-links"></div>
+        </div>
+        <form id="contact-form" class="contact-form reveal">
+          <div class="form-pair">
+            <div class="field">
+              <label for="nom">Ton nom</label
+              ><input
+                id="nom"
+                name="nom"
+                autocomplete="name"
+                maxlength="80"
+                required
+                placeholder="Comment t'appelles-tu ?"
+              />
+            </div>
+            <div class="field">
+              <label for="email">Ton email</label
+              ><input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                maxlength="160"
+                required
+                placeholder="toi@exemple.fr"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label for="sujet">Le sujet</label
+            ><input
+              id="sujet"
+              name="sujet"
+              maxlength="100"
+              required
+              placeholder="Un projet, une rencontre…"
+            />
+          </div>
+          <div class="field">
+            <label for="message">Ton message</label
+            ><textarea
+              id="message"
+              name="message"
+              rows="5"
+              minlength="10"
+              maxlength="1500"
+              required
+              placeholder="Raconte-moi ton idée…"
+            ></textarea>
+          </div>
+          <button class="button button-primary" type="submit">
+            Préparer mon email <span aria-hidden="true">↗</span>
+          </button>
+          <p class="small-note">
+            Ce formulaire ouvre ta messagerie avec un brouillon. Tu confirmes
+            ensuite l'envoi dans ton application email
+          </p>
+          <p class="form-status" id="form-status" role="status"></p>
+          <a class="text-link" id="mail-fallback" hidden>Ouvrir le brouillon</a>
+        </form>
+      </section>
+    </main>
+    <footer class="container site-footer">
+      <a class="brand" href="#accueil"
+        ><span data-name>Votre prénom</span><span class="brand-dot"></span
+      ></a>
+      <p>© <span id="year">2026</span> Un peu de moi dans chaque ligne</p>
+      <a class="back-top" href="#accueil"
+        >En haut <span aria-hidden="true">↑</span></a
+      >
+    </footer>
+    <dialog id="project-dialog" aria-labelledby="dialog-title">
+      <button
+        class="dialog-close"
+        type="button"
+        aria-label="Fermer le détail du projet"
+      >
+        ×
+      </button>
+      <p class="eyebrow" id="dialog-category"></p>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-description"></p>
+      <ul
+        class="tags"
+        id="dialog-tags"
+        aria-label="Technologies utilisées"
+      ></ul>
+      <div class="dialog-links" id="dialog-links"></div>
+    </dialog>
+  </body>
+</html>

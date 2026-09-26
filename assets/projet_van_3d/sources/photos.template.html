@@ -1,0 +1,148 @@
+<main
+  class="photo-page"
+  id="photos-panel"
+  role="tabpanel"
+  aria-labelledby="tab-photos"
+  tabindex="0"
+  hidden
+>
+  <div class="photo-wrap">
+    <section class="photo-hero" aria-labelledby="photo-heading">
+      <div>
+        <p class="photo-kicker">Le projet en images · Avant / Après</p>
+        <h1 class="photo-heading" id="photo-heading">
+          D’un utilitaire<br />à un <em>espace<br />de vie.</em>
+        </h1>
+        <p class="photo-lead">
+          Tout commence par une coque vide. Isolation, bois, mobilier et
+          finitions : les photos racontent la transformation du van, étape après
+          étape.
+        </p>
+        <div class="photo-stat">
+          <strong>07</strong
+          ><span>PHOTOGRAPHIES<br />DU CHANTIER AU RÉSULTAT</span>
+        </div>
+        <a class="photo-jump" href="#etapes"
+          >Voir les étapes <span aria-hidden="true">↓</span></a
+        >
+      </div>
+      <figure class="compare-wrap">
+        <div class="compare-labels">
+          <span>LE MÊME VAN</span><span>DEUX ÉTATS</span>
+        </div>
+        <div class="compare" id="photo-compare">
+          <img
+            src="{{PHOTO_6}}"
+            width="{{WIDTH_6}}"
+            height="{{HEIGHT_6}}"
+            alt="Après : le lit transversal installé, les parois habillées de bois et les équipements sous le couchage."
+            decoding="async"
+          />
+          <img
+            class="compare-before"
+            src="{{PHOTO_1}}"
+            width="{{WIDTH_1}}"
+            height="{{HEIGHT_1}}"
+            alt="Avant : l’intérieur vide du fourgon, avec la carrosserie et le sol en métal apparents."
+            decoding="async"
+          />
+          <span class="compare-stamp stamp-before" aria-hidden="true"
+            >AVANT</span
+          >
+          <span class="compare-stamp stamp-after" aria-hidden="true"
+            >APRÈS</span
+          >
+          <span class="compare-line" aria-hidden="true"
+            ><span class="compare-grip"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="m8 8-4 4 4 4m8-8 4 4-4 4M12 6v12" /></svg></span
+          ></span>
+          <input
+            id="compare-range"
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            aria-label="Comparer les photos avant et après"
+            aria-describedby="compare-caption"
+            aria-valuetext="50 % avant, 50 % après"
+          />
+        </div>
+        <div class="compare-controls" aria-label="Position du comparateur">
+          <button type="button" data-compare-value="100" aria-pressed="false">
+            Avant</button
+          ><button type="button" data-compare-value="50" aria-pressed="true">
+            Moitié / moitié</button
+          ><button type="button" data-compare-value="0" aria-pressed="false">
+            Après
+          </button>
+        </div>
+        <figcaption class="compare-caption" id="compare-caption">
+          Déplace le curseur pour comparer.<br />Vues depuis l’arrière, avec des
+          cadrages légèrement différents.
+        </figcaption>
+      </figure>
+    </section>
+    <section class="photo-story" id="etapes" aria-labelledby="story-heading">
+      <div class="story-head">
+        <h2 id="story-heading">Les étapes de l’aménagement</h2>
+        <p>Clique sur une photo pour l’agrandir.</p>
+      </div>
+      <ol class="photo-grid">
+        <!-- PHOTO_CARDS -->
+      </ol>
+    </section>
+    <div class="photo-outro">
+      <p>Et maintenant, explore les volumes.</p>
+      <button class="return-viewer" type="button">
+        Revenir à la visite 3D <span aria-hidden="true">↗</span>
+      </button>
+    </div>
+    <p class="photo-footer">PHOTOGRAPHIES DU PROJET · MOHAMED EL YAGOUBI</p>
+  </div>
+</main>
+<dialog
+  class="photo-dialog"
+  id="photo-dialog"
+  aria-labelledby="dialog-title"
+  aria-describedby="dialog-description"
+>
+  <div class="dialog-top">
+    <span class="dialog-count" id="dialog-count">01 / 07</span
+    ><button
+      class="dialog-close"
+      id="dialog-close"
+      type="button"
+      aria-label="Fermer la photo"
+      autofocus
+    >
+      ×
+    </button>
+  </div>
+  <div class="dialog-image-area">
+    <button
+      class="dialog-arrow"
+      id="dialog-prev"
+      type="button"
+      aria-label="Photo précédente"
+    >
+      ‹</button
+    ><img id="dialog-image" alt="" /><button
+      class="dialog-arrow"
+      id="dialog-next"
+      type="button"
+      aria-label="Photo suivante"
+    >
+      ›
+    </button>
+  </div>
+  <div class="dialog-caption" aria-live="polite">
+    <h2 id="dialog-title"></h2>
+    <p id="dialog-description"></p>
+  </div>
+</dialog>

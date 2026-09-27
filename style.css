@@ -1118,3 +1118,11 @@ dialog > p:not(.eyebrow) {
     bottom: -20px;
   }
 }
+@media (max-width: 768px) {
+  .section-heading {
+    display: block;
+  }
+  .section-heading p {
+    margin-top: 15px;
+  }
+}

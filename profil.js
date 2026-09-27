@@ -55,13 +55,13 @@ const PROFIL = {
     },
     {
       periode: "2021",
-      titre: "Linguiste d'écoute - RNCP niveau 5",
+      titre: "RNCP niveau 5 - Linguiste d'écoute",
       detail:
         " CFIAR Strasbourg - Formation spécialisée en interception et traduction des informations, développant maîtrise linguistique, analyse et communication ",
     },
     {
       periode: "2013",
-      titre: "BTS CRSA (Conception et Réalisation de Système Automatisés",
+      titre: "BTS CRSA (Conception et Réalisation de Système Automatisés)",
       detail:
         " Vauvenargue Aix en provence - Formation technique orientée vers la conception, la programmation et la maintenance de systèmes automatisés",
     },

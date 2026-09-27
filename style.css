@@ -1115,14 +1115,6 @@ dialog > p:not(.eyebrow) {
 
 @media (max-width: 768px) {
   .code-stamp {
-    bottom: 0px;
-  }
-}
-@media (max-width: 768px) {
-  .section-heading {
-    display: block;
-  }
-  .section-heading p {
-    margin-top: 15px;
+    bottom: 20px;
   }
 }
